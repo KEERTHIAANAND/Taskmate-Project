@@ -5,7 +5,7 @@ import { ShowTask } from "./components/ShowTask";
 import './App.css'
 
 function App() {
-  const [tasklist,setTasklist]=useState([]);
+  const [tasklist,setTasklist]=useState(localStorage.getItem("tasklist"));
   const [task,setTask]=useState({})
   return (
     <div className="App">
