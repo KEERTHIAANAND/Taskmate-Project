@@ -1,8 +1,8 @@
 export const ShowTask = () => {
   const tasks=[
     {id:1000, Name: "Task 1", time: "2:10:00 AM 16/2/2025"},
-    {id:1000, Name: "Task 1", time: "2:10:00 AM 16/2/2025"},
-    {id:1000, Name: "Task 1", time: "2:10:00 AM 16/2/2025"},
+    {id:1000, Name: "Task 2", time: "2:10:00 AM 16/2/2025"},
+    {id:1000, Name: "Task 3", time: "2:10:00 AM 16/2/2025"},
   ]
   return (
     <section className="showTask">
@@ -17,7 +17,7 @@ export const ShowTask = () => {
           {tasks.map((task) => (
             <li>
             <p>
-              <span className="name">{task.name} A</span>
+              <span className="name">{task.Name}</span>
               <span className="time">{task.time}</span>
             </p>
             <i className="bi bi-pencil-square"></i>
