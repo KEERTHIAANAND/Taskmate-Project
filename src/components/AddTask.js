@@ -1,4 +1,4 @@
-export const AddTask = ({tasklist,setTasklist}) => {
+export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const date=new Date();
@@ -9,7 +9,7 @@ export const AddTask = ({tasklist,setTasklist}) => {
   return (
     <section className="addTask">
         <form onSubmit={handleSubmit}>
-            <input type="text" name="task" autocomplete="off" placeholder="Task Name"/>
+            <input type="text" name="task" value={task.name} autoComplete="off" placeholder="Task Name"/>
             <button type="submit">ADD</button>
         </form>
     </section>
